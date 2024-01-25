@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+textarea {
+    resize: none;
+}
+
+hr {
+    margin: 10px 0px;
+    color: darkgray;
+}
+
+::-moz-selection {
+    color: #ffffff;
+    background: var(--bs-primary);
+}
+
+::selection {
+    color: #ffffff;
+    background: var(--bs-primary);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 8px;
+    background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #aab7cf;
+}
+
+/*--------------------------------------------------------------
+# Override some default Bootstrap stylings
+--------------------------------------------------------------*/
+*:focus {
+    box-shadow: none !important;
+    outline: 0px !important;
+}
+
+.form-control,
+.form-select {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #fdfdfd;
+    border: 1.5px solid var(--bs-primary);
+    outline: 0;
+    box-shadow: 0 0 0.25rem 0.05rem rgba(105, 108, 255, 0.1);
+}
